@@ -5,7 +5,7 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const authRoutes = require("./Routes/authRoutes");
 const productRoutes = require("./Routes/productRoutes");
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 const cors = require('cors');
 
 
